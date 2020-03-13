@@ -13,12 +13,14 @@ class Triangle
        :equilateral
      elsif (@side_1 == @side_2) || (@side_2 == @side_3) || (@side_1 == @side_3)
        :isosceles
+       raise TriangleError
+     end
      elsif (@side_1 != @side_2) && (@side_2 != @side_3) && (@side_1 != @side_3)
        :scalene
      end
-raise TriangleError
+    raise TriangleError
 
-  end
+    end
 
   class TriangleError < StandardError
 
