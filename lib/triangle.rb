@@ -11,7 +11,8 @@ class Triangle
   def kind
     if @triangles.each {|side| side.even?}
       :equilateral
-    elsif @triangles.first(2) == @triangles.first(2)
+    end
+    if @triangles.first(2) == @triangles.first(2)
       :isosceles
 
 
