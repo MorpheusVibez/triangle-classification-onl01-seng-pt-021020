@@ -26,9 +26,9 @@ class Triangle
       raise TriangleError
     end
 
-    # if @side_1 == nil || @side_2 == nil ||@side_3 == nil
-    #   raise TriangleError
-    # end
+    if @side_1 == nil || @side_2 == nil ||@side_3 == nil
+      raise TriangleError
+    end
 
   end
 
