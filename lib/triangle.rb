@@ -14,9 +14,8 @@ class Triangle
       return :isosceles
     else
       return :scalene
-      raise TriangleError
     end
-
+    raise TriangleError
   end
 
   class TriangleError < StandardError
