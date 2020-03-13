@@ -24,9 +24,9 @@ class Triangle
       raise TriangleError
     end
 
-    # if s1 == nil || s2 == nil ||s3 == nil
-    #   raise TriangleError
-    # end
+    if s1 == nil || s2 == nil ||s3 == nil
+      raise TriangleError
+    end
 
   end
 
